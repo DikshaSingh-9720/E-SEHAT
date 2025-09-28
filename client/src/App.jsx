@@ -71,7 +71,7 @@ function App() {
                 <Route path="/help" element={<HelpSupport />} />
 
                 {/* fallback route */}
-                <Route path="*" element={<Navigate to="/" />} />
+                {/* <Route path="*" element={<Navigate to="/" />} /> */}
               </Routes>
 
               <Footer />

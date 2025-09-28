@@ -1,13 +1,12 @@
 import React, { useState, useContext } from 'react';
 import { useTranslation } from 'react-i18next';
-import { AuthContext } from '../context/AuthContext';
 import { OfflineContext } from '../context/OfflineContext';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import './Login.css';
 
 const Login = () => {
   const { t } = useTranslation();
-  const { login } = useContext(AuthContext);
   const { isOnline } = useContext(OfflineContext);
   const navigate = useNavigate();
 
@@ -21,19 +20,40 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (!isOnline) {
       setError(t('login.offlineError'));
       return;
     }
 
     setLoading(true);
-    const result = await login(credentials);
-    setLoading(false);
+    setError('');
 
-    if (result.success) {
-      navigate(`/${result.role}-dashboard`);
-    } else {
-      setError(result.message);
+    try {
+      // Call your backend login API
+      const res = await axios.post('http://localhost:5000/api/auth/login', credentials);
+
+      const { token, role } = res.data;
+
+      // Save token for authenticated requests
+      localStorage.setItem('token', token);
+      localStorage.setItem('role', role);
+
+      // Redirect based on role
+      if (role === 'admin') {
+        navigate('/admin-dashboard');
+      } else if (role === 'doctor') {
+        navigate('/doctor-dashboard');
+      } else if (role === 'patient') {
+        navigate('/patient-dashboard');
+      } else {
+        navigate('/dashboard'); // fallback
+      }
+    } catch (err) {
+      console.error(err);
+      setError(err.response?.data?.message || t('login.invalidCredentials'));
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -41,9 +61,7 @@ const Login = () => {
     <div className="login-page">
       <h2>{t('login.title')}</h2>
 
-      {!isOnline && (
-        <p className="offline-banner">{t('login.offlineWarning')}</p>
-      )}
+      {!isOnline && <p className="offline-banner">{t('login.offlineWarning')}</p>}
 
       <form className="login-form" onSubmit={handleSubmit}>
         <label htmlFor="email">{t('login.email')}</label>
