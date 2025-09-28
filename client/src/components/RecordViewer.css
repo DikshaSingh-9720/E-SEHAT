@@ -1,0 +1,72 @@
+.record-viewer {
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.record-viewer h3 {
+  color: #00796b;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.record-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.record-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.record-body p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.no-records {
+  color: #999;
+  font-style: italic;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .record-viewer {
+    padding: 0.5rem;
+  }
+
+  .record-card {
+    padding: 0.8rem;
+  }
+
+  .record-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .record-viewer h3 {
+    font-size: 1.2rem;
+  }
+
+  .record-body p {
+    font-size: 0.9rem;
+  }
+}

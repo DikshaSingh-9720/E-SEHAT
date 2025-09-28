@@ -1,0 +1,112 @@
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+}
+
+.register-card {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.register-card h2 {
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #e0f2f1;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-buttons button.active {
+  background-color: #00796b;
+  color: white;
+}
+
+.register-form,
+.otp-login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.register-form input,
+.register-form select,
+.otp-login input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.submit-btn,
+.otp-btn {
+  padding: 10px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover,
+.otp-btn:hover {
+  background-color: #004d40;
+}
+
+.error-message {
+  color: #d32f2f;
+  background-color: #ffcdd2;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.success-message {
+  color: #388e3c;
+  background-color: #c8e6c9;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .register-card {
+    padding: 20px 15px;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tab-buttons button {
+    margin: 0;
+  }
+}

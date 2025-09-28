@@ -1,0 +1,144 @@
+{
+  "footer": {
+    "copyright": "All rights reserved",
+    "tagline": "Empowering rural communities through accessible healthcare"
+  },
+
+  "appointment": {
+    "book": "Book a Consultation",
+    "selectSpecialty": "Select Specialty",
+    "selectDoctor": "Select Doctor",
+    "selectTime": "Select Time Slot",
+    "choose": "Choose...",
+    "confirm": "Confirm Appointment",
+    "confirmed": "Appointment confirmed with"
+  },
+
+  "records": {
+    "title": "Health Records",
+    "noData": "No records available",
+    "date": "Date",
+    "doctor": "Doctor",
+    "diagnosis": "Diagnosis",
+    "prescription": "Prescription",
+    "notes": "Additional Notes"
+  },
+
+  "consultation": {
+    "title": "Book a Consultation",
+    "selectSpecialty": "Select a medical specialty",
+    "choose": "Choose...",
+    "offlineMessage": "You're offline. Doctor list may be unavailable.",
+    "loading": "Loading available doctors...",
+    "noDoctors": "No doctors available for this specialty."
+  },
+
+  "specialties": {
+    "general": "General Physician",
+    "pediatrics": "Pediatrics",
+    "gynecology": "Gynecology",
+    "dermatology": "Dermatology"
+  },
+
+  "dashboard": {
+    "welcome": "Welcome",
+    "guest": "Guest",
+    "offline": "You're offline. Some features may be limited.",
+    "consultation": "Consultation",
+    "consultationDesc": "Book appointments with doctors",
+    "records": "Health Records",
+    "recordsDesc": "View your medical history",
+    "symptoms": "Symptom Checker",
+    "symptomsDesc": "Get AI-based health insights",
+    "medicine": "Medicine Stock",
+    "medicineDesc": "Check availability of medicines",
+    "help": "Help & Support",
+    "helpDesc": "Get assistance and FAQs",
+    "patientTitle": "Welcome, Patient",
+    "healthRecords": "My Health Records",
+    "medicineStock": "Medicine Stock",
+    "symptomChecker": "Symptom Checker",
+    "helpSupport": "Help & Support",
+    "doctorTitle": "Welcome, Doctor",
+    "manageConsultations": "Manage Consultations",
+    "patientRecords": "Patient Records",
+    "medicineInventory": "Medicine Inventory",
+    "symptomAnalysis": "Symptom Analysis"
+  },
+
+  "support": {
+    "title": "Health Support & Help",
+    "offlineMessage": "You're offline. Some help resources may be unavailable.",
+    "emergencyTitle": "Emergency Contacts",
+    "faqTitle": "Frequently Asked Questions",
+    "ambulance": "Ambulance",
+    "womenHelpline": "Women Helpline",
+    "childHelpline": "Child Helpline",
+    "healthMinistry": "Health Ministry Helpline",
+    "faq1": {
+      "q": "How do I book a doctor consultation?",
+      "a": "Go to the Consultation page and select a specialty to view available doctors."
+    },
+    "faq2": {
+      "q": "Can I access my health records offline?",
+      "a": "Yes, recent records are cached for offline viewing."
+    },
+    "faq3": {
+      "q": "What languages does the app support?",
+      "a": "Currently English, Hindi, and Punjabi."
+    }
+  },
+
+  "login": {
+    "title": "Login to Your Account",
+    "email": "Email Address",
+    "password": "Password",
+    "submit": "Login",
+    "loading": "Logging in...",
+    "offlineWarning": "You're offline. Login may not work.",
+    "offlineError": "Please connect to the internet to log in."
+  },
+
+  "medicine": {
+    "title": "Medicine Stock",
+    "offlineMessage": "You're offline. Stock data may be unavailable.",
+    "loading": "Loading available medicines...",
+    "name": "Medicine Name",
+    "quantity": "Quantity",
+    "expiry": "Expiry Date",
+    "noStock": "No medicines currently in stock."
+  },
+
+  "register": {
+    "title": "Register / OTP Login",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "phone": "Phone Number",
+    "address": "Address",
+    "role": "Role",
+    "roles": {
+      "patient": "Patient",
+      "doctor": "Doctor",
+      "admin": "Admin"
+    },
+
+    "submit": "Register",
+    "otpSend": "Send OTP",
+    "otpVerify": "Verify OTP",
+    "offlineError": "You are offline.",
+    "success": "Registration successful!",
+    "error": "Something went wrong."
+  },
+
+  "symptoms": {
+    "title": "Symptom Checker",
+    "label": "Describe your symptoms",
+    "placeholder": "e.g. fever, cough, fatigue...",
+    "submit": "Check Symptoms",
+    "loading": "Analyzing...",
+    "offlineMessage": "You're offline. Symptom analysis is unavailable.",
+    "error": "Unable to analyze symptoms. Please try again.",
+    "noAdvice": "No specific advice found. Please consult a doctor."
+  }
+}
