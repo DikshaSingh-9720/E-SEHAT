@@ -141,4 +141,83 @@
     "error": "Unable to analyze symptoms. Please try again.",
     "noAdvice": "No specific advice found. Please consult a doctor."
   }
+,
+
+  "patients": [
+    {
+      "id": "P12345",
+      "name": "Rajesh Sharma",
+      "age": 30,
+      "gender": "Male",
+      "bloodGroup": "B+",
+      "contact": "+91-9367853684",
+      "allergies": "None",
+      "records": [
+        {
+          "type": "Prescription",
+          "title": "Blood Pressure Medication",
+          "date": "2025-09-15",
+          "doctor": "Dr. Sharma",
+          "status": "Completed",
+          "details": "Take one tablet daily after breakfast for 30 days."
+        },
+        {
+          "type": "Lab Test",
+          "title": "Blood Sugar Test",
+          "date": "2025-09-10",
+          "doctor": "Dr. Gupta",
+          "status": "Pending",
+          "details": "Fasting blood sugar required. Report expected in 2 days."
+        }
+      ],
+      "consultations": [
+        {
+          "doctor": "Dr. Sharma",
+          "date": "2025-09-15",
+          "reason": "High blood pressure & dizziness",
+          "diagnosis": "Hypertension",
+          "treatment": "Prescribed blood pressure medication, monitor BP daily",
+          "followUp": "Next visit after 1 month"
+        },
+        {
+          "doctor": "Dr. Gupta",
+          "date": "2025-09-10",
+          "reason": "Routine checkup for sugar levels",
+          "diagnosis": "Pre-diabetes",
+          "treatment": "Diet modification and exercise recommended",
+          "followUp": "Follow-up in 2 weeks for blood sugar test"
+        }
+      ]
+    },
+    {
+      "id": "P67890",
+      "name": "Rohit Verma",
+      "age": 30,
+      "gender": "Male",
+      "bloodGroup": "O+",
+      "contact": "+91-9876543210",
+      "allergies": "Penicillin",
+      "records": [
+        {
+          "type": "Prescription",
+          "title": "Cholesterol Medication",
+          "date": "2025-09-12",
+          "doctor": "Dr. Mehta",
+          "status": "Completed",
+          "details": "Take one tablet at night for 30 days"
+        }
+      ],
+      "consultations": [
+        {
+          "doctor": "Dr. Mehta",
+          "date": "2025-09-12",
+          "reason": "High cholesterol",
+          "diagnosis": "Hyperlipidemia",
+          "treatment": "Prescribed Atorvastatin",
+          "followUp": "Next visit after 1 month"
+        }
+      ]
+    }
+  ]
 }
+

@@ -7,7 +7,7 @@ import { OfflineProvider } from "./context/OfflineContext";
 import Login from "./pages/Login";
 import Register from "./components/Register";
 import Consultation from "./pages/Consultation";
-import HealthRecords from "./pages/HealthRecords";
+import HealthRecords from "./pages/HealthRecords"
 import MedicineStock from "./pages/MedicineStock";
 import SymptomChecker from "./pages/SymptomChecker";
 import HelpSupport from "./pages/HealthSupport";
